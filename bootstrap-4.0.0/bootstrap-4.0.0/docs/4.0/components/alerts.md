@@ -74,15 +74,12 @@ Enable dismissal of an alert via JavaScript:
 
 {% highlight js %}
 $('.alert').alert()
-{% endhighlight %}
 
 Or with `data` attributes on a button **within the alert**, as demonstrated above:
 
-{% highlight html %}
 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
   <span aria-hidden="true">&times;</span>
 </button>
-{% endhighlight %}
 
 Note that closing an alert will remove it from the DOM.
 
