@@ -53,5 +53,6 @@ userSuccess = JSON.parse(localStorage.getItem("userLogin"));
 lgUsername.innerHTML = userSuccess.username;
 
 if (lgUsername.innerHTML !== 'Sign in') {
+    document.querySelector('.btnLogin-popup').disabled = true;
     logout();
 }
