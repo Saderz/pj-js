@@ -24,25 +24,25 @@ Alerts are available for any length of text, as well as an optional dismiss butt
 
 Use the `.alert-link` utility class to quickly provide matching colored links within any alert.
 
-{% example html %}
+{% highlight html %}
 {% for color in site.data.theme-colors %}
 <div class="alert alert-{{ color.name }}" role="alert">
-  This is a {{ color.name }} alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  This is a {{ color.name }} alert with <a href="#" class="alert-link">an highlight link</a>. Give it a click if you like.
 </div>{% endfor %}
-{% endexample %}
+{% endhighlight %}
 
 ### Additional content
 
 Alerts can also contain additional HTML elements like headings, paragraphs and dividers.
 
-{% example html %}
+{% highlight html %}
 <div class="alert alert-success" role="alert">
   <h4 class="alert-heading">Well done!</h4>
-  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+  <p>Aww yeah, you successfully read this important alert message. This highlight text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
   <hr>
   <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
 </div>
-{% endexample %}
+{% endhighlight %}
 
 
 ### Dismissing
@@ -57,14 +57,14 @@ Using the alert JavaScript plugin, it's possible to dismiss any alert inline. He
 
 You can see this in action with a live demo:
 
-{% example html %}
+{% highlight html %}
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
   <strong>Holy guacamole!</strong> You should check in on some of those fields below.
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
-{% endexample %}
+{% endhighlight %}
 
 ## JavaScript behavior
 
@@ -106,4 +106,3 @@ Bootstrap's alert plugin exposes a few events for hooking into alert functionali
 $('#myAlert').on('closed.bs.alert', function () {
   // do something…
 })
-{% endhighlight %}
