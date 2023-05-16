@@ -1,7 +1,7 @@
 # Dependencies
 markdown:       kramdown
 highlighter:    rouge
-
+remote_theme: "mmistakes/minimal-mistakes@4.13.0"
 kramdown:
   auto_ids:     true
 
